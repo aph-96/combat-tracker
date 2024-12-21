@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: #333;
+  background: linear-gradient(
+    110.6deg,
+    rgb(184, 142, 252) 2.2%,
+    rgb(104, 119, 244) 100.2%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+h4,
+li {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #787cf6;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #787cf6;
+}
+.tracker-container {
+  max-width: 600px;
+  margin: auto;
+}
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.initiative-list {
+  list-style-type: none;
+  padding: 0;
+}
+.initiative-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.initiative-list li span {
+  display: inline-block;
+}
+#hp-cards {
+  display: flex; /* Use flexbox for horizontal layout */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 15px; /* Space between cards */
+  overflow-x: auto; /* Enable horizontal scrolling if cards exceed width */
+  padding: 10px 0; /* Optional padding for spacing */
+}
+
+.card {
+  flex: 0 0 auto; /* Prevent cards from shrinking and ensure they maintain their width */
+  width: 200px; /* Set fixed width for cards */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card input {
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button.damage {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.heal {
+  background-color: #28a745;
+  color: white;
+}

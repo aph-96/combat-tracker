@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D&D Resource Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="tracker-container">
+        <h1>D&D Initiative Tracker</h1>
+        <div class="form-group">
+          <input type="text" id="nameInput" placeholder="Character Name" />
+          <input type="number" id="initiativeInput" placeholder="Initiative" />
+          <button id="addButton">Add Character</button>
+        </div>
+        <ul class="initiative-list" id="initiativeList">
+          <!-- List items will be dynamically added here -->
+        </ul>
+      </div>
+
+      <!-- Health Point Tracker -->
+      <section id="hp-tracker">
+        <h2>Health Point Tracker</h2>
+        <form id="hp-form">
+          <button type="button" id="add-hp-card">Add Player Card</button>
+        </form>
+        <div id="hp-cards"></div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
